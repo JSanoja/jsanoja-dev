@@ -2,7 +2,7 @@
   "name": "jsanoja-dev",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "sh deploy.sh"
@@ -11,10 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/JSanoja/jsanoja-dev.git"
   },
-  "author": "",
+  "author": "Juan Sanoja",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JSanoja/jsanoja-dev/issues"
   },
-  "homepage": "https://github.com/JSanoja/jsanoja-dev#readme"
+  "homepage": "https://github.com/JSanoja/jsanoja-dev#readme",
+  "engines": {
+    "node": "18"
+  }
 }

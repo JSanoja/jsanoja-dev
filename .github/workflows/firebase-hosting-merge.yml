@@ -18,3 +18,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TEST_FIREBASE_9A2CF }}'
           channelId: live
           projectId: test-firebase-9a2cf
+

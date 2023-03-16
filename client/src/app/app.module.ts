@@ -3,16 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { SocialComponent } from './components/social/social.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AvatarComponent } from './components/avatar/avatar.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SocialComponent,
+    FooterComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

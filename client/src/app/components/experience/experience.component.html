@@ -1,1 +1,6 @@
-<p>experience works!</p>
+<h3>Experience</h3>
+<ul>
+  <li class="edu" *ngFor="let exp of experience">
+    {{exp.company}} - {{exp.charge}} - {{exp.description}} - {{ exp.country }}
+  </li>
+</ul>

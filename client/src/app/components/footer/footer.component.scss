@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  background-color: #1e2732;
+  padding: 20px;
+  box-shadow: rgba(136, 153, 166, 0.1) 0px 0px 1px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
+  .info {
+    text-align: right;
+  }
+  .link {
+    color: white;
+    transition: color .3s;
+    text-decoration: none;
+    &:hover {
+      color:rgb(201 110 182);
+    }
+  }
+}

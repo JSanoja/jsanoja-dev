@@ -74,16 +74,16 @@ export class DataService {
     }
   ]
   private skills : ISkills = {
-    frontend: "HTML, CSS, Less, Sass, Javascript",
-    backend: "PHP, NodeJS, Python, JAVA",
-    devOps: "Git runners, Vercel, NowSH, Jenkins, Shell script, batch, dpkg linux .deb",
-    pM: "Assana, Slack, Trello, Jira, Customs Agiles tracker",
-    databases: "MySQL, MongoDB, Postgree, PostGIS, MariaDB",
-    packages: "Google APIs, ML APIs, paypal APIs, Btc APIs, Mootools, jQuery, AMP, NPM, pip",
-    frameworks: "Bootstrap, Express, Angular, React, Vue, NextJS",
-    electronic: "Visual basic, Assembler, Picbasic, Microcontroladores, PLC, SCADA",
-    design: "Fireworks, Photoshop, Illustrator, Lightroom",
-    hobbies: "Acrobatic Gymnastics, Sports Juggling, Guitar, Hiking, Tennis, Soccer and Video Games."
+    frontend: ["HTML", "CSS", "Less", "Sass", "Javascript", "Twigg", "Django"],
+    backend: ["PHP", "NodeJS", "Python", "JAVA"],
+    devOps: ["Git runners", "Vercel", "NowSH", "Jenkins", "Shellscript", "batch", "dpkg linux .deb"],
+    pM: ["Assana", "Slack", "Trello", "Jira", "Customs Agiles tracker"],
+    databases: ["MySQL", "MongoDB", "Postgree", "PostGIS", "MariaDB"],
+    packages: ["Google APIs", "ML APIs", "paypal APIs", "Btc APIs", "Mootools", "jQuery", "AMP", "NPM", "pip"],
+    frameworks: ["Bootstrap", "Express", "Angular", "React", "Vue", "NextJS"],
+    electronic: ["Basic", "Assembler", "Picbasic", "Microcontroladores", "PLC", "SCADA"],
+    design: ["Fireworks", "Photoshop", "Illustrator", "Lightroom"],
+    hobbies: ["Acrobatic Gymnastics", "Sports Juggling", "Guitar", "Hiking", "Tennis", "Soccer and Video Games"]
 
   }
   constructor() { }

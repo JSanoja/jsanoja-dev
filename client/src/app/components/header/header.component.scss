@@ -1,0 +1,41 @@
+:host {
+  display: block;
+  background-color: #15202b;
+  .profile {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+  }
+  .r-content {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    margin-top: -10px;
+    .logo {
+      font-size: 80px;
+      font-weight: 700;
+    }
+    .name {
+      font-size: 20px;
+    }
+
+  }
+  .build {
+    width: calc(100% - 200px);
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: left;
+    font-size: 22px;
+    .position {
+      font-size: 16px;
+    }
+  }
+}

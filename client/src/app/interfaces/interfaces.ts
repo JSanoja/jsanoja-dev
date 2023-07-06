@@ -25,14 +25,14 @@ export interface IExperience {
   description: string
 }
 export interface ISkills {
-  frontend: string
-  backend: string
-  devOps: string
-  pM: string
-  databases: string
-  packages: string
-  frameworks: string
-  electronic: string
-  design: string
-  hobbies: string
+  frontend: Array<string>
+  backend: Array<string>
+  devOps: Array<string>
+  pM: Array<string>
+  databases: Array<string>
+  packages: Array<string>
+  frameworks: Array<string>
+  electronic: Array<string>
+  design: Array<string>
+  hobbies: Array<string>
 }

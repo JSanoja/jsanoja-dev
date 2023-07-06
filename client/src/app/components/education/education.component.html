@@ -1,1 +1,6 @@
-<p>education works!</p>
+<h3>Education</h3>
+<ul>
+  <li class="edu" *ngFor="let edu of education">
+    {{edu.grade}} - {{edu.type}} - {{edu.institution}} - {{ (edu.date.getFullYear() + 1) }}
+  </li>
+</ul>

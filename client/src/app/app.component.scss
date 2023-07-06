@@ -1,0 +1,16 @@
+:host {
+  .container {
+    padding: 0;
+    box-shadow: rgba(136, 153, 166, 0.1) 0px 0px 1px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
+  }
+  .content {
+    background-color: #1e2732;
+    color:#e9eced;
+    padding: 20px;
+  }
+  .wide {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+  }
+}

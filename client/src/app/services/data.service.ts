@@ -7,7 +7,7 @@ import { IEducation, IExperience, IProfile, ISkills } from '../interfaces/interf
 export class DataService {
   private personal: IProfile = {
     name: "Juan M. Sanoja Peña",
-    charge: "Software Tech Leader",
+    charge: "Tech Lead - Software Engineer",
     phone: "+5491127599166",
     country: "Argentina",
     nationality: "Venezuelan",
@@ -18,11 +18,11 @@ export class DataService {
   }
   private education: Array<IEducation> = [
     {
-      institution:"Instituto “Juan XXIII” Hermanos Maristas",
-      type:"Basic Study",
-      grade:"Bachelor",
-      site: "Punto Fijo - Venezuela",
-      date: new Date("2002")
+      institution:"University “Jose Antonio Paez”",
+      type:"Postgraduate Study",
+      grade:"Process Automation",
+      site:"Valencia - Venezuela",
+      date: new Date("2014")
     },
     {
       institution:"University Yacambú" ,
@@ -32,29 +32,29 @@ export class DataService {
       date: new Date("2008")
     },
     {
-      institution:"University “Jose Antonio Paez”",
-      type:"Postgraduate Study",
-      grade:"Specialist in Process automation",
-      site:"Valencia - Venezuela",
-      date: new Date("2014")
-    }
+      institution:"Institute “Juan XXIII” Hermanos Maristas",
+      type:"Basic Study",
+      grade:"Bachelor in Science",
+      site: "Punto Fijo - Venezuela",
+      date: new Date("2002")
+    },
   ]
   private experience: Array<IExperience> =[
     {
       start: new Date("2019"),
       end: new Date("2023"),
-      charge:"Tech Lead Software Engineering",
+      charge:"Tech Lead Software Engineer",
       country:"Argentina",
       company:"SpaceSUR",
-      description:"Developing and leading solutions for large-scale Geospatial projects for large companies such as Unicef, CONAE, Ministry of National Security, among others, using innovative technologies. Participate in 3 great developments of the company. The Geoplatform is a GIS Viewer with innovative tools developed with React, Python. For the security ministry 'SISGEO' (Geospatial intelligence system) developed in Luciad and NodeJS and a Catalog and satellite image processors. Developed in NodeJS, Angular and Python"
+      description:"Developing and leading large-scale Geospatial projects for major companies, such as Unicef, CONAE or Argentina Ministry of National Security. I have played a key role in some significant company developments like Geoplatform (GIS Viewer equipped with cutting-edge  tools, developed using React and Python) or SISGEO (Geospatial intelligence system, my notable contributions, built using Luciad and NodeJS), I also contributed to the creation of a Catalog and satellite image processors utilizing NodeJS, Angular, and Python."
     },
     {
       start: new Date("2017"),
       end: new Date("2019"),
-      charge:"Sr. Full-Stack",
+      charge:"Sr. Full-Stack Developer",
       country:"Argentina",
       company:"Dos al Cubo",
-      description:"With Scrum / Agile methodology, I performed architecture, engineering and development tasks for CMS Thinkindot, a product for Massive Content portals. I used technologies like Angular, Node.js, Typescript, Symphony, AngularJS, React, Sass, CSS, HTML5, PHP, Express."
+      description:"Successfully executed architecture, engineering, and development tasks for CMS Thinkindot using the Scrum/Agile methodology. This particular product was designed for Massive Content portals. Throughout the project, I proficiently utilized a wide range of technologies including Angular, Node.js, TypeScript, Symfony, AngularJS, React, Sass, CSS, HTML5, PHP, and Express. My role and these technologies were instrumental in achieving the desired outcomes."
     },
     {
       start: new Date("2011"),
@@ -74,18 +74,42 @@ export class DataService {
     }
   ]
   private skills : ISkills = {
-    frontend: ["HTML", "CSS", "Less", "Sass", "Javascript", "Twigg", "Django"],
-    backend: ["PHP", "NodeJS", "Python", "JAVA"],
+    frontend: ["HTML", "CSS", "Less", "Sass", "Javascript", "Twigg", "Django", "TypeScript"],
+    backend: ["NodeJS", "Python", "JAVA", "PHP"],
     devOps: ["Git runners", "Vercel", "NowSH", "Jenkins", "Shellscript", "batch", "dpkg linux .deb"],
     pM: ["Assana", "Slack", "Trello", "Jira", "Customs Agiles tracker"],
-    databases: ["MySQL", "MongoDB", "Postgree", "PostGIS", "MariaDB"],
+    databases: ["MySQL", "MongoDB", "Postgree", "PostGIS", "MariaDB", "Firebase"],
     packages: ["Google APIs", "ML APIs", "paypal APIs", "Btc APIs", "Mootools", "jQuery", "AMP", "NPM", "pip"],
     frameworks: ["Bootstrap", "Express", "Angular", "React", "Vue", "NextJS"],
     electronic: ["Basic", "Assembler", "Picbasic", "Microcontroladores", "PLC", "SCADA"],
     design: ["Fireworks", "Photoshop", "Illustrator", "Lightroom"],
-    hobbies: ["Acrobatic Gymnastics", "Sports Juggling", "Guitar", "Hiking", "Tennis", "Soccer and Video Games"]
+    hobbies: ["Acrobatic Gymnastics", "Sports Juggling", "Guitar", "Hiking", "Tennis", "Soccer and Video Games"],
+    cloud: ["AWS", "Google CLoud", "Vmware", "Database cloud"]
 
   }
+  private courses: Array<IEducation> = [
+    {
+      institution:"Udemy",
+      type:"Online Course",
+      grade:"Scrum Master",
+      site:"Buenos Aires, Argentina",
+      date: new Date("2020")
+    },
+    {
+      institution:"Udemy",
+      type:"Online Course",
+      grade:"QGIS Introduction to GIS",
+      site:"Buenos Aires, Argentina",
+      date: new Date("2020")
+    },
+    {
+      institution:"Mongo University",
+      type:"Online Course",
+      grade:"MongoDB for Nodejs",
+      site:"Buenos Aires, Argentina",
+      date: new Date("2019")
+    },
+  ]
   constructor() { }
   getPersonal() : IProfile {
     return this.personal
@@ -98,5 +122,8 @@ export class DataService {
   }
   getSkils(): ISkills {
     return this.skills
+  }
+  getCourses(): Array<IEducation>{
+    return this.courses
   }
 }

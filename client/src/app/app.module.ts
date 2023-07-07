@@ -12,6 +12,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 import { DataService } from './services/data.service';
 import { SkillsComponent } from './components/skills/skills.component';
 import { PersonalComponent } from './components/personal/personal.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PersonalComponent } from './components/personal/personal.component';
     FooterComponent,
     AvatarComponent,
     SkillsComponent,
-    PersonalComponent
+    PersonalComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,

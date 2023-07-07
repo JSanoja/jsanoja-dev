@@ -35,4 +35,5 @@ export interface ISkills {
   electronic: Array<string>
   design: Array<string>
   hobbies: Array<string>
+  cloud: Array<string>
 }

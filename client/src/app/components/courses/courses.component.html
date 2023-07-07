@@ -1,0 +1,6 @@
+<h3>Courses</h3>
+<ul>
+  <li class="edu" *ngFor="let c of courses">
+    {{c.grade}} - {{c.type}} - {{c.institution}} - {{ (c.date.getFullYear() + 1) }}
+  </li>
+</ul>
